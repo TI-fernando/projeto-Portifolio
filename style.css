@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,6 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    backdrop-filter: blur(20px);
 }
 
 header .logo {
@@ -54,4 +56,72 @@ header ul li:hover a {
     width: 100%;
     min-height: 100vh;
     background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    padding-bottom: 0; /*Edição minha*/
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 25vw;
+    background: #30fe6c;
+    border-top-right-radius: 25vw;
+    border-top-left-radius: 25vw;
+}
+
+#home .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+    z-index: 10;
+}
+
+#home .content h2 {
+    position: relative;
+    font-size: 3em;
+    color: #30fe6c;
+}
+
+#home .content p {
+    position: relative;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #30fe6c;
+    color: #222;
+    text-align: center;
+    padding: 18px 30px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#home .perfil {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    max-height: 90vh;
+}
+
+#services, #portfolio, #contact {
+    position: relative;
+    background: #34353a;
+    min-height: 100vh;
+    padding: 120px 100px;
 }

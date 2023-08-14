@@ -281,7 +281,7 @@ header ul li:hover a {
 
     #home .men {
         position: absolute;
-        height: 50vh;
+        height: 100vh;
         right: 0;
     }
 
@@ -334,8 +334,37 @@ header ul li:hover a {
         transition: 0.5s;
     }
 
+    header.active .menuToggle::before {
+        transform: translateY(0px) rotate(45deg); 
+        box-shadow: 0 0 #fff;
+    }
+
+    header.active .menuToggle::after {
+        transform: translateY(0px) rotate(315deg); 
+        box-shadow: 0 0 #fff;
+    }
+
     header ul {
         display: none;
+    }
+
+    header.active ul {
+        position: fixed;
+        left: 0;
+        top: 84px;
+        width: 100%;
+        height: calc(100vh - 84px);
+        background-color: rgba(50, 50, 50, 0.95);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10000;
+        gap: 20px;
+    }
+
+    header.active ul li a {
+        font-size: 2em;
     }
 }
 

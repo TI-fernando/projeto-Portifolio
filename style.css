@@ -129,6 +129,12 @@ header ul li:hover a {
     flex-direction: column;
 }
 
+#portfolio .content p {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
 .secText {
     position: relative;
     width: 100%;

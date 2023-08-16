@@ -29,6 +29,7 @@ header .logo {
     font-size: 2em;
 }
 
+
 header ul {
     position: relative;
     display: flex;
@@ -82,6 +83,7 @@ header ul li:hover a {
     gap: 10px;
     max-width: 650px;
     z-index: 10;
+    margin-bottom: 300px;
 }
 
 #home .content h2 {

@@ -131,10 +131,10 @@ header ul li:hover a {
     flex-direction: column;
 }
 
-#portfolio .content p {
+#portfolio .content h2, a {
     color: #fff;
+    font-size: 1.2em;
     text-decoration: none;
-    font-size: 1em;
 }
 
 .secText {

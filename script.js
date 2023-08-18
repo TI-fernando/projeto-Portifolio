@@ -13,3 +13,7 @@ let header = document.querySelector('header');
 menuToggle.onclick = function () {
     header.classList.toggle('active');
 }
+
+function openLinkInNewWindow(link) {
+    window.open(link, '_blank');
+}

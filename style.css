@@ -290,6 +290,12 @@ header ul li:hover a {
         padding: 10px 20px;
     }
 
+    #home .perfil {
+        position: absolute;
+        height: 40vh;
+        right: 0;
+    }
+
     #home .men {
         position: absolute;
         height: 100vh;
@@ -381,7 +387,7 @@ header ul li:hover a {
 
 @media (max-width: 700px) {
     #home .content h2 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     #home::before {
@@ -397,7 +403,7 @@ header ul li:hover a {
     }
 
     #home .men {
-        height: 40vh;
+        height: 30vh;
     }
 
     #services .content,

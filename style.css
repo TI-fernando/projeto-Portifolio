@@ -391,6 +391,10 @@ header ul li:hover a {
         border-top-left-radius: 80vw;
     }
 
+    #services, #portfolio, #contact {
+        padding: 80px 50px 40px;
+    }
+
     #home .men {
         height: 40vh;
     }
@@ -399,6 +403,7 @@ header ul li:hover a {
     #portfolio .content,
     #contact .content {
         grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
     }
 
     #contact .content a {

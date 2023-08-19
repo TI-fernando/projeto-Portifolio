@@ -64,18 +64,6 @@ header ul li:hover a {
     padding-bottom: 60px;
 }
 
-#home::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50vw;
-    height: 25vw;
-    background: #30fe6c;
-    border-top-right-radius: 25vw;
-    border-top-left-radius: 25vw;
-}
-
 #home .content {
     position: relative;
     display: flex;
@@ -83,8 +71,9 @@ header ul li:hover a {
     gap: 10px;
     max-width: 650px;
     z-index: 10;
-    margin-bottom: 300px;
+    margin-bottom: 30px;
 }
+
 
 #home .content h2 {
     position: relative;

@@ -408,4 +408,35 @@ header ul li:hover a {
   }
 }
 
+@media (max-width: 480px) {
+  header {
+    padding: 10px 20px;
+  }
 
+  #home {
+    padding: 80px 20px;
+    align-items: flex-start;
+  }
+
+  #home .perfil {
+    position: relative;
+    height: auto;
+    width: 80%;
+    max-width: 30px;
+    right: auto;
+    margin: 20px auto;
+  }
+
+  #services,
+  #portfolio,
+  #contact {
+    padding: 60px 20px;
+  }
+
+  #services .content,
+  #portfolio .content,
+  #contact .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}

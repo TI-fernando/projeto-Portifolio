@@ -6,6 +6,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Open Sans", sans-serif;
+  
 }
 
 header {
@@ -105,7 +106,8 @@ header ul li:hover a {
   position: absolute;
   bottom: 0;
   right: 100px;
-  max-height: 90vh;
+  max-height: 100vh;
+  margin: 0;
 }
 
 #services,
@@ -210,6 +212,9 @@ header ul li:hover a {
 
 #portfolio .content .imgBx img {
   max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
 }
 
 #contact .content {
@@ -266,6 +271,7 @@ header ul li:hover a {
     padding: 150px 50px;
     flex-direction: column;
     padding-bottom: 0;
+    overflow-x: hidden;
   }
 
   #home .content h2 {
@@ -278,15 +284,12 @@ header ul li:hover a {
   }
 
   #home .perfil {
-    position: absolute;
-    height: 40vh;
-    right: 0;
-  }
-
-  #home .men {
-    position: absolute;
-    height: 100vh;
-    right: 0;
+    position: relative;
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+    right: auto;
+    margin: 20px auto;
   }
 
   .secText h2 {
@@ -389,8 +392,8 @@ header ul li:hover a {
     padding: 80px 50px 40px;
   }
 
-  #home .men {
-    height: 30vh;
+  #home .perfil {
+    max-height: 30vh;
   }
 
   #services .content,
@@ -404,3 +407,5 @@ header ul li:hover a {
     height: 80px;
   }
 }
+
+
